@@ -1,13 +1,14 @@
 import { log } from 'console'
 import express from 'express'
 import nodemailer from 'nodemailer'
+
 const app = express()
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'jgungun659@gmail.com',
-        pass: 'tjop njtj qwly sdlc'
+        user: 'mail',
+        pass: 'pass'
     },
     tls: {
         rejectUnauthorized: false
@@ -26,8 +27,8 @@ app.post('/submit-email', (req, res) => {
     log(data)
 
     const mailOption = {
-        from: 'jgungun659@gmail.com',
-        to: 'jgungun659@gmail.com',
+        from: 'mail',
+        to: 'mail',
         subject: req.body.subject,
         text: req.body.mail
     }
