@@ -1,8 +1,8 @@
-SendMailer
+# SendMailer
 
 SendMailer is a simple Node.js + Express + Nodemailer app that lets users send emails through a web form using Gmail SMTP.
 
-Features
+# Features
 
 Send emails from a form
 
@@ -12,6 +12,6 @@ Handles SSL/firewall issues
 
 Simple UI
 
-🛠 Tech
+# 🛠 Tech
 
 Node.js, Express, Nodemailer, EJS
